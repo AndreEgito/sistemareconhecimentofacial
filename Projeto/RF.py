@@ -4,7 +4,7 @@ import cv2
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')  # Certifique-se de que o arquivo XML do classificador está na pasta correta
 
 # Carregar a imagem em que deseja detectar rostos
-imagem = cv2.imread('andre01.jpg')  # Substitua 'andre01.jpg' pelo caminho da sua imagem
+imagem = cv2.imread('r'C:\Users\autologon\Desktop\Sistemas Cognitivos [2023.2]\Projeto\rosto.jpg'')  # Substitua 'andre01.jpg' pelo caminho da sua imagem
 
 # Verifique se a imagem foi carregada com sucesso
 if imagem is not None:
