@@ -4,9 +4,9 @@ import cv2
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')  # Certifique-se de que o arquivo XML do classificador está na pasta correta
 
 # Carregar a imagem em que deseja detectar rostos
-imagem = cv2.imread('r'C:\Users\autologon\Desktop\Sistemas Cognitivos [2023.2]\Projeto\rosto.jpg'')  # Substitua 'andre01.jpg' pelo caminho da sua imagem
+imagem = cv2.imread(r'C:\Users\autologon\Desktop\Sistemas Cognitivos [2023.2]\Projeto\rosto.jpg')  # Substitua 'andre01.jpg' pelo caminho da sua imagem
 
-# Verifique se a imagem foi carregada com sucesso
+# Verificar se a imagem foi carregada com sucesso
 if imagem is not None:
     # Converter a imagem em escala de cinza (detecção de rostos funciona melhor em imagens em escala de cinza)
     imagem_gray = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
