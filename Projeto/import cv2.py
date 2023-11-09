@@ -1,7 +1,7 @@
 import cv2
 
 # Carregue o classificador Haar Cascade para detecção de faces
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_alt.xml')
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Verifique se o classificador foi carregado corretamente
 if face_cascade.empty():
@@ -35,6 +35,9 @@ while True:
     for (x, y, w, h) in faces:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
+    # Exiba a contagem de faces na janela
+    cv2.putText(frame, f'Faces: {len(faces)}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
+
     # Mostre o quadro com as faces detectadas
     cv2.imshow('Detecção de Faces', frame)
 
@@ -45,3 +48,4 @@ while True:
 # Libere a webcam e feche a janela
 cap.release()
 cv2.destroyAllWindows()
+ 
