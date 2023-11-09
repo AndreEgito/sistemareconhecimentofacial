@@ -28,7 +28,7 @@ def detectAndDisplay(frame):
 
 # Configuração dos argumentos da linha de comando
 parser = argparse.ArgumentParser(description='Código para tutorial do Cascade Classifier.')
-parser.add_argument('--face_cascade', help='Caminho para o cascade de rosto.', default='"C:/Users/André do Egito/OneDrive/Área de Trabalho/André/TI/Sistemas Cognitivos/Projeto/haarcascade_frontalface_alt.xml"')
+parser.add_argument('--face_cascade', help='Caminho para o cascade de rosto.', default='C:/Users/André do Egito/OneDrive/Área de Trabalho/André/TI/Sistemas Cognitivos/Projeto/haarcascade_frontalface_alt.xml')
 parser.add_argument('--eyes_cascade', help='Caminho para o cascade de olhos.', default='data/haarcascades/haarcascade_eye_tree_eyeglasses.xml')
 parser.add_argument('--camera', help='Número da câmera.', type=int, default=0)
 args = parser.parse_args()
