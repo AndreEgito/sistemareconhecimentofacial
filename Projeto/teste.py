@@ -23,7 +23,7 @@ detector = dlib.get_frontal_face_detector()
 known_face_encodings = []
 known_face_names = []
 
-# capturando e salvando foto
+# Capturando e salvando foto
 def capture_photo():
     print("Entrando na função capture_photo...")
     ret, frame = cap.read()
@@ -63,7 +63,7 @@ def update_known_faces():
     known_face_encodings = []
     known_face_names = []
 
-    image_files = glob.glob("Images/*.jpeg")
+    image_files = glob.glob("Imagens_cadastradas/*.png")
 
     for image_file in image_files:
         try:
